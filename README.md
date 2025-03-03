@@ -79,7 +79,7 @@
 </p-->
 
 <p align="center">
-<a href="https://github.com/PiyushSuthar/github-readme-quotes"><img src="https://quotes-github-readme.vercel.app/api?quote=💻Doing%20everything🎨%20that%20seems%20not%20so%20easy%20to%20achieve!&type=horizontal&author=Rongsheng%20Wang" /></a>
+<a href="https://github.com/LinXingJiang"><img src="https://quotes-github-readme.vercel.app/api?quote=💻Doing%20everything🎨%20that%20seems%20not%20so%20easy%20to%20achieve!&type=horizontal&author=Xingjiang%20Lin" /></a>
 </p>
 
 <!--
