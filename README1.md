@@ -1,4 +1,4 @@
-<strong> Hi, I'm Github 河南理工大学-WangRongsheng! 你学习到越多你就会越幸运的遇到机会<img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></strong>
+<strong> Hi, I'm Github 学院-LinXingjiang! 你学习到越多你就会越幸运的遇到机会<img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></strong>
 
 ## Github Statistics
 
@@ -13,7 +13,7 @@
 
 ## Contact Me
 
-<p><em>1.hpu undergraduate at <a href="http://www.hpu.edu.cn/www/index.html">河南理工大学</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+<p><em>1.hpu undergraduate at <a href="http://www.hpu.edu.cn/www/index.html">大学</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 <p><em>2.QQ：wrs603329354@qq.com</em></p>
 
@@ -28,11 +28,11 @@
 
 ## Visitor Statistics
 
-<img src="https://github.com/WangRongsheng/WangRongsheng/blob/master/resources/banner.png" alt="Hello world">
+<img src="https://github.com/WangRongsheng/LinXingJiang/blob/master/resources/banner.png" alt="Hello world">
 
 <p align="center"> 
   Visitor count<br>
-  <img src="https://profile-counter.glitch.me/WangRongsheng/count.svg" />
+  <img src="https://profile-counter.glitch.me/LinXingJiang/count.svg" />
 </p>
 
 
