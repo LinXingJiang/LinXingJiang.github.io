@@ -1,33 +1,184 @@
-# ===============================================================
-# AcademicPages original structure (restored)
-# ===============================================================
-locale: "en-US"
-site_theme: "default"
-title: "Xingjiang Lin (Bryce)"
-title_separator: "-"
-name: &name "Xingjiang Lin (Bryce)"
-description: &description "M.S. Student in Artificial Intelligence | University at Buffalo"
-url: "https://linxingjiang.github.io"
-baseurl: ""
-repository: "LinXingJiang/LinXingJiang.github.io"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-# ===============================================================
-# Author info
-# ===============================================================
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Xingjiang Lin (Bryce)"
+title_separator          : "-"
+name                     : &name "Xingjiang Lin"
+description              : &description "M.S. Student in Artificial Intelligence | University at Buffalo"
+url                      : https://linxingjiang.github.io
+baseurl                  : ""
+repository               : "LinXingJiang/LinXingJiang.github.io"
+
+# Site Author - sidebar information
 author:
-  avatar: "LIN-XING-JIANG-1.jpg"
-  name: "Xingjiang Lin (Bryce)"
-  bio: "Research-oriented M.S. student in AI."
-  location: "University at Buffalo, NY"
-  employer: "University at Buffalo"
-  email: "xlin227@buffalo.edu"
-  googlescholar: "https://scholar.google.com/"
-  github: "LinXingJiang"
-  linkedin: "www.linkedin.com/in/lin-xingjiang-4773b7326"
+  avatar           : "images/LIN-XING-JIANG-1.jpg"   # avatar image path
+  name             : "Xingjiang Lin (Bryce)"
+  pronouns         : "he/him"
+  bio              : "M.S. student in Artificial Intelligence at the University at Buffalo."
+  location         : "Buffalo, NY, USA"
+  employer         : "University at Buffalo"
+  uri              : 
+  email            : "xlin227@buffalo.edu"
 
-# ===============================================================
+  # Academic websites
+  academia         : 
+  arxiv            : 
+  googlescholar    : "https://scholar.google.com/"
+  impactstory      : 
+  orcid            : "https://orcid.org/0000-0000-0000-0000"
+  semantic         : 
+  pubmed           : 
+  researchgate     : 
+  scopus           : 
+
+  # Repositories and software development
+  github           : "LinXingJiang"
+  kaggle           : 
+  stackoverflow    : 
+  bitbucket        : 
+  codepen          : 
+  dribbble         : 
+
+  # Social media
+  linkedin         : "www.linkedin.com/in/lin-xingjiang-4773b7326"
+  twitter          : 
+  bluesky          : 
+  instagram        : 
+  medium           : 
+  youtube          : 
+  zhihu            : 
+
+# Publication Category
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
+
+# Site Settings
+teaser                   :  
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
+comments:
+  provider               : 
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
+atom_feed:
+  hide                   : false
+  path                   :
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+social:
+  type                   : Person
+  name                   : "Xingjiang Lin"
+  links:
+    - "https://github.com/LinXingJiang"
+    - "www.linkedin.com/in/lin-xingjiang-4773b7326"
+    - "https://scholar.google.com/"
+
+# Analytics
+analytics:
+  provider               :  "false"
+  google:
+    tracking_id          :
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 # Collections
-# ===============================================================
 collections:
   teaching:
     output: true
@@ -42,9 +193,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# ===============================================================
 # Defaults
-# ===============================================================
 defaults:
   - scope:
       path: ""
@@ -85,6 +234,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comment: true
   - scope:
       path: ""
       type: talks
@@ -93,11 +243,16 @@ defaults:
       author_profile: true
       share: true
 
-# ===============================================================
-# Markdown and plugins
-# ===============================================================
-markdown: kramdown
-highlighter: rouge
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/New_York
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -106,13 +261,25 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-# ===============================================================
-# Output
-# ===============================================================
-permalink: /:categories/:title/
-timezone: America/New_York
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
 
-# ===============================================================
-# Theme
-# ===============================================================
-remote_theme: "academicpages/academicpages.github.io"
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
