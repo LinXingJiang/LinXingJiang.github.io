@@ -1,16 +1,18 @@
 # ===============================================================
-# Site information
+# Site Information
 # ===============================================================
 title: "Xingjiang Lin (Bryce)"
+email: "xingjiang.lin@buffalo.edu"
 description: "M.S. Student in Artificial Intelligence | University at Buffalo"
-url: "https://xingjianglin.github.io"
-baseurl: "" # leave empty unless using a subpath
+baseurl: "" # leave blank unless your site is in a subfolder
+url: "https://linxingjiang.github.io"
 
 # ===============================================================
-# Author details
+# Author Profile
 # ===============================================================
 author:
   name: "Xingjiang Lin (Bryce)"
+  avatar: "images/profile.jpg" # put your photo under /images/
   position: "Research M.S. Student in Artificial Intelligence"
   affiliation: "University at Buffalo, The State University of New York"
   email: "xingjiang.lin@buffalo.edu"
@@ -19,28 +21,47 @@ author:
     agentic intelligence, and large language models. I have two years of software engineering experience,
     including at the London Stock Exchange Group (LSEG), where I contributed to scalable system design
     and intelligent automation solutions.
-  avatar: "/assets/img/profile.jpg"  # path to your portrait photo
 
 # ===============================================================
-# Social media
+# Social Links
 # ===============================================================
 social:
-  github: "xingjianglin"
+  github: "LinXingJiang"
   linkedin: "https://www.linkedin.com/in/xingjianglin"
   scholar: "https://scholar.google.com/"
   email: "xingjiang.lin@buffalo.edu"
-  twitter: ""
   cv: "/files/Xingjiang_Lin_CV.pdf"
+  twitter: ""
 
 # ===============================================================
-# Appearance and theme
+# Theme & Plugins
 # ===============================================================
-remote_theme: "mmistakes/minimal-mistakes"
-locale: "en-US"
-skin: "default"
+remote_theme: "academicpages/academicpages.github.io"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-include-cache
 
 # ===============================================================
-# Navigation bar
+# Site Settings
+# ===============================================================
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+permalink: pretty
+timezone: America/New_York
+paginate: 5
+paginate_path: "/page:num/"
+
+# ===============================================================
+# Navigation Bar
 # ===============================================================
 navigation:
   - title: "Home"
@@ -61,7 +82,7 @@ navigation:
     url: /contact/
 
 # ===============================================================
-# Collections (academic content)
+# Collections (Academic Content)
 # ===============================================================
 collections:
   publications:
@@ -80,38 +101,6 @@ collections:
     output: true
     permalink: /posts/:path/
 
-# ===============================================================
-# Markdown, math, syntax highlighting
-# ===============================================================
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-# ===============================================================
-# Plugins
-# ===============================================================
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-include-cache
-  - jekyll-redirect-from
-  - jekyll-archives
-
-# ===============================================================
-# Pagination
-# ===============================================================
-paginate: 5
-paginate_path: "/page:num/"
-
-# ===============================================================
-# Defaults (layout configuration)
-# ===============================================================
 defaults:
   - scope:
       path: ""
@@ -135,13 +124,13 @@ defaults:
       layout: post
 
 # ===============================================================
-# SEO and analytics
+# SEO & Analytics
 # ===============================================================
 seo:
   type: Person
   name: "Xingjiang Lin"
   same_as:
-    - "https://github.com/xingjianglin"
+    - "https://github.com/LinXingJiang"
     - "https://www.linkedin.com/in/xingjianglin"
     - "https://scholar.google.com/"
 
@@ -152,7 +141,7 @@ analytics:
     anonymize_ip: true
 
 # ===============================================================
-# Build settings
+# Exclude from Build
 # ===============================================================
 exclude:
   - README.md
@@ -160,9 +149,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-
-# ===============================================================
-# Sitemap
-# ===============================================================
-permalink: pretty
-timezone: America/New_York
+  - markdown_generator
