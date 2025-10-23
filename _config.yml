@@ -12,17 +12,18 @@ site_theme               : "default"
 title                    : "Xingjiang Lin (Bryce)"
 title_separator          : "-"
 name                     : &name "Xingjiang Lin"
-description              : &description "M.S. Student in Artificial Intelligence | University at Buffalo"
+description              : &description "Research M.S. Student in Artificial Intelligence | University at Buffalo"
 url                      : https://linxingjiang.github.io
 baseurl                  : ""
 repository               : "LinXingJiang/LinXingJiang.github.io"
 
-# Site Author - sidebar information
+# Site Author - The following control what appear as part of the author content on the side bar.
 author:
-  avatar           : "images/LIN-XING-JIANG-1.jpg"   # avatar image path
+  # Biographic information
+  avatar           : "LIN-XING-JIANG-1.jpg"
   name             : "Xingjiang Lin (Bryce)"
   pronouns         : "he/him"
-  bio              : "M.S. student in Artificial Intelligence at the University at Buffalo."
+  bio              : "Research M.S. student at the University at Buffalo."
   location         : "Buffalo, NY, USA"
   employer         : "University at Buffalo"
   uri              : 
@@ -48,7 +49,7 @@ author:
   dribbble         : 
 
   # Social media
-  linkedin         : "www.linkedin.com/in/lin-xingjiang-4773b7326"
+  linkedin         : "https://www.linkedin.com/in/lin-xingjiang-4773b7326"
   twitter          : 
   bluesky          : 
   instagram        : 
@@ -56,7 +57,7 @@ author:
   youtube          : 
   zhihu            : 
 
-# Publication Category
+# Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
@@ -67,7 +68,7 @@ publication_category:
 
 # Site Settings
 teaser                   :  
-breadcrumbs              : false
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
@@ -92,7 +93,7 @@ staticman:
         format           : "iso8601"
 atom_feed:
   hide                   : false
-  path                   :
+  path                   : 
 
 # SEO Related
 google_site_verification :
@@ -107,13 +108,13 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :
+og_image                 : 
 social:
   type                   : Person
   name                   : "Xingjiang Lin"
   links:
     - "https://github.com/LinXingJiang"
-    - "www.linkedin.com/in/lin-xingjiang-4773b7326"
+    - "https://www.linkedin.com/in/lin-xingjiang-4773b7326"
     - "https://scholar.google.com/"
 
 # Analytics
@@ -178,7 +179,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
+# These settings control the types of collections used by the template
 collections:
   teaching:
     output: true
@@ -193,8 +194,9 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Defaults
+# These settings control how pages and collections are included in the site
 defaults:
+  # _posts
   - scope:
       path: ""
       type: posts
@@ -205,12 +207,14 @@ defaults:
       comments: true
       share: true
       related: true
+  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+  # _teaching
   - scope:
       path: ""
       type: teaching
@@ -219,6 +223,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _publications
   - scope:
       path: ""
       type: publications
@@ -227,6 +232,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _portfolio
   - scope:
       path: ""
       type: portfolio
@@ -235,6 +241,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _talks
   - scope:
       path: ""
       type: talks
