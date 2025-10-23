@@ -35,7 +35,7 @@ social:
 # ===============================================================
 # Appearance and theme
 # ===============================================================
-theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 locale: "en-US"
 skin: "default"
 
@@ -94,6 +94,7 @@ kramdown:
 # Plugins
 # ===============================================================
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
