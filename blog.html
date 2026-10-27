@@ -1,0 +1,43 @@
+---
+layout: default
+title : Blog
+navbar_title: Blog
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+
+{% assign blogs_by_year = site.posts | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="card border-0 shadow-sm hero-card mb-3">
+    <div class="card-body p-4">
+        <div class="section-kicker">Blog</div>
+        <h1 class="projects-title mb-2">Notes on systems, agents, and learning by building.</h1>
+        <div class="projects-intro">
+            A place for longer reflections on reliable AI systems, agent behavior, backend engineering, and
+            things I learn while building.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        {% for year in blogs_by_year %}
+        {% assign num_blogs = year.items | size %}
+        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in year.items %}
+                {% include widgets/blog_card.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+            {% for year in blogs_by_year %}
+            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

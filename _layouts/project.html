@@ -1,0 +1,25 @@
+---
+layout: default
+navbar_title: Projects
+---
+
+<div class="row">
+    <div class="col-lg-9">
+        <a class="project-back" href="{{ '/projects/' | relative_url }}"><i class="fas fa-arrow-left mr-1"></i> All projects</a>
+        <article class="card border-0 shadow-sm projects-shell mt-3">
+            <div class="card-body p-4 p-lg-5">
+                <div class="project-row-meta mb-2">
+                    {% if page.tag %}<span class="project-tag">{{ page.tag }}</span>{% endif %}
+                    <span class="project-period">{{ page.period }}</span>
+                </div>
+                <h1 class="projects-title mb-2">{{ page.title }}</h1>
+                {% if page.summary %}<p class="project-lead">{{ page.summary }}</p>{% endif %}
+                {% if page.metrics %}<div class="project-metrics mb-3">{{ page.metrics }}</div>{% endif %}
+                {% include widgets/project_links.html project=page %}
+                <div class="project-content mt-4">
+                    {{ content }}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

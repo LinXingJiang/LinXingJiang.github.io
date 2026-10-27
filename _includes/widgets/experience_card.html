@@ -1,0 +1,81 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm experience-shell">
+            <div class="card-body p-4">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="section-kicker">Background</div>
+                    </div>
+                </div>
+                <div class="row" data-masonry='{"percentPosition": true }'>
+                    {% if site.data.profile.education %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1 timeline-panel">
+                            <h6 class="panel-title">Education</h6>
+                            <ul class="list-unstyled mb-1 timeline-list">
+                                {% for item in site.data.profile.education %}
+                                <li class="media mb-4 timeline-item">
+                                    <div class="media-body">
+                                        <div class="font-weight-bold">{{ item.name }}</div>
+                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="small d-flex flex-column">
+                                            <div class="timeline-date mb-2"><em>{{ item.date }}</em></div>
+                                            <div>{{ item.position }}</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.experience %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1 timeline-panel">
+                            <h6 class="panel-title">Experience</h6>
+                            <ul class="list-unstyled mb-1 timeline-list">
+                                {% for item in site.data.profile.experience %}
+                                <li class="media mb-4 timeline-item">
+                                    <div class="media-body">
+                                        <div class="font-weight-bold">{{ item.name }}</div>
+                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="small d-flex flex-column">
+                                            <div class="timeline-date mb-2"><em>{{ item.date }}</em></div>
+                                            <div>{{ item.position }}</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.projects %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1 timeline-panel project-panel">
+                            <h6 class="panel-title">Selected Project</h6>
+                            <ul class="list small pl-3 mb-1">
+                                {% for item in site.data.profile.projects %}
+                                <li>
+                                    <div class="d-flex flex-column">
+                                        <div class="font-weight-bold">{{ item.name }}</div>
+                                        <div class="timeline-date mb-2"><em>{{ item.date }}</em></div>
+                                    </div>
+                                    {% if item.description %}
+                                    <div>{{ item.description }}</div>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

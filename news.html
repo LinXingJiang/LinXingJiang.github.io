@@ -1,0 +1,38 @@
+---
+layout: default
+title: News
+navbar_title: News
+---
+
+{% assign news_by_year = site.news | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm hero-card mb-3">
+            <div class="card-body p-4">
+                <div class="section-kicker">News</div>
+                <h1 class="projects-title mb-2">Updates, milestones, and current work.</h1>
+                <div class="projects-intro">
+                    A short timeline of the work I have been doing across production AI systems, graduate study,
+                    and agent-related projects.
+                </div>
+            </div>
+        </div>
+
+        {% for year in news_by_year %}
+        <div class="card border-0 shadow-sm experience-shell mb-3">
+            <div class="card-body p-4">
+                <h3 class="panel-title mb-3">{{ year.name }}</h3>
+                {% for item in year.items %}
+                <div class="border-top {% if forloop.first %}border-top-0 pt-0{% else %}pt-3 mt-3{% endif %}">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="timeline-date mr-md-4 mb-2 mb-md-0"><em>{{ item.date | date: "%b %d" }}</em></div>
+                        <div>{{ item.title }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

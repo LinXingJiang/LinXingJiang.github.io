@@ -1,0 +1,28 @@
+---
+layout: default
+title: Xingjiang Lin
+navbar_title: Home
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+
+        {% include widgets/profile_card_bio_only.html %}
+
+        {% include widgets/projects_showcase.html featured_only=true limit=site.data.display.homepage.num_projects %}
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+    </div>
+</div>

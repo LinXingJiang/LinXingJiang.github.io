@@ -1,0 +1,12 @@
+{%- assign p = include.project -%}
+{% if p.tech or p.github or p.demo or p.paper %}
+<div class="project-links">
+    {% if p.tech %}
+    {% assign techs = p.tech | split: ", " %}
+    {% for t in techs %}<span class="project-tech">{{ t }}</span>{% endfor %}
+    {% endif %}
+    {% if p.github %}<a class="project-link" href="{{ p.github }}" target="_blank"><i class="fab fa-github mr-1"></i>Code</a>{% endif %}
+    {% if p.demo %}<a class="project-link" href="{{ p.demo }}" target="_blank"><i class="fas fa-play mr-1"></i>Demo</a>{% endif %}
+    {% if p.paper %}<a class="project-link" href="{{ p.paper }}" target="_blank"><i class="fas fa-file-alt mr-1"></i>Paper</a>{% endif %}
+</div>
+{% endif %}
