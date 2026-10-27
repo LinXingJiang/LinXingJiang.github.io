@@ -15,24 +15,6 @@ focus_areas:
 - Evaluation Methodology
 - Training & Inference Infra
 
-
-vision_title: "Building AI that improves itself."
-vision_summary: "Understand how models learn. Make them keep learning after training ends. Build the stack that runs it."
-vision_thrusts:
-- label: Understand
-  line: What learning really changes inside a model.
-  link_name: Pretraining, prompts and RL as search
-  url: /2026/10/27/pretraining-prompts-rl-as-search
-- label: Improve
-  line: Agents and tutors that get better from their own experience.
-  link_name: Self-evolving agent skills
-  url: /projects/self-evolving-agent-skills
-- label: Build
-  line: The full stack, from RL pipelines and inference to agents.
-  link_name: RL systems lab
-  url: /projects/rl-systems-lab
-vision_question: "Can a model teach itself something new?"
-
 email: "xingjiang.lin@outlook.com"
 # cv_link: /Xingjiang.pdf  # resume not published for now
 # gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
