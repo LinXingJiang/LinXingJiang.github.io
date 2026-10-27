@@ -14,13 +14,13 @@
   meaning: Learning from outcomes, not just imitation.
 - key: memory
   color: "#059669"
-  name: Memory & Self-Improvement
+  name: Self-Improvement
   short: Self-Evolve
   icon: fas fa-seedling
   meaning: Getting better from experience, often without new weights.
 - key: infra
   color: "#d97706"
-  name: Training & Inference Infrastructure
+  name: Infrastructure
   short: Infra
   icon: fas fa-server
   meaning: Training and serving models correctly, at speed.

@@ -1,6 +1,5 @@
 {%- comment -%}
-Capability map: what each capability means in the LLM era, and which projects use it.
-Capabilities (with colors) come from _data/capabilities.yml; projects declare `capabilities:` and `short:`.
+Capability map: which projects use each capability (from _data/capabilities.yml + project `capabilities:`).
 Hovering a project pill highlights the same project in every tile.
 {%- endcomment -%}
 {%- assign projects = site.projects | sort: "order" -%}
@@ -11,12 +10,14 @@ Hovering a project pill highlights the same project in every tile.
                 <div class="section-kicker mb-3"><i class="fas fa-compass mr-1"></i>What I Work On</div>
                 <div class="cap-grid">
                     {% for cap in site.data.capabilities %}
-                    <section class="cap-tile" style="--cap: {{ cap.color }}">
+                    {%- assign n = 0 -%}
+                    {%- for p in projects -%}{%- if p.capabilities contains cap.key -%}{%- assign n = n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+                    <section class="cap-tile">
                         <div class="cap-head">
-                            <span class="cap-badge"><i class="{{ cap.icon }}"></i></span>
+                            <i class="{{ cap.icon }} cap-icon"></i>
                             <h3 class="cap-name">{{ cap.name }}</h3>
+                            <span class="cap-count">{{ n }}</span>
                         </div>
-                        <p class="cap-meaning">{{ cap.meaning }}</p>
                         <div class="cap-pills">
                             {% for p in projects %}{% if p.capabilities contains cap.key %}
                             <a class="cap-pill" href="{{ p.url | relative_url }}" data-project="{{ p.slug }}" title="{{ p.title }}">{{ p.short | default: p.title }}</a>

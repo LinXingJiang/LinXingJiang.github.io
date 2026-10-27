@@ -609,105 +609,79 @@ div.lazy {
 }
 
 /* Homepage: capability map */
-.cap-intro {
-    color: var(--muted);
-    font-size: 0.93rem;
-    margin-bottom: 1.1rem;
-}
-
 .cap-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.8rem;
+    gap: 0.7rem;
 }
 
 .cap-tile {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1.05rem 1.05rem;
-    border-radius: 0.9rem;
+    padding: 0.9rem 1rem 1rem;
+    border-radius: 0.8rem;
     background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(19, 34, 56, 0.06);
-    overflow: hidden;
-}
-
-.cap-tile::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 3px;
-    background: var(--cap);
-    opacity: 0.85;
+    border: 1px solid rgba(19, 34, 56, 0.07);
 }
 
 .cap-head {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.45rem;
+    gap: 0.55rem;
+    margin-bottom: 0.65rem;
 }
 
-.cap-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.6rem;
-    color: var(--cap);
-    background: color-mix(in srgb, var(--cap) 12%, white);
+.cap-icon {
+    width: 1rem;
+    text-align: center;
+    color: var(--accent);
     font-size: 0.9rem;
 }
 
 .cap-name {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 800;
     color: var(--text);
     line-height: 1.25;
 }
 
-.cap-meaning {
+.cap-count {
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-weight: 700;
     color: var(--muted);
-    font-size: 0.83rem;
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
 }
 
 .cap-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.3rem;
 }
 
 .cap-pill {
-    padding: 0.18rem 0.6rem;
+    padding: 0.15rem 0.55rem;
     border-radius: 999px;
-    font-size: 0.76rem;
-    font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 600;
     white-space: nowrap;
-    color: color-mix(in srgb, var(--cap) 80%, black);
-    background: color-mix(in srgb, var(--cap) 10%, white);
-    border: 1px solid color-mix(in srgb, var(--cap) 22%, white);
-    transition: opacity 120ms ease, background 120ms ease, color 120ms ease;
+    color: #4b5668;
+    background: #f1f3f7;
+    transition: background 120ms ease, color 120ms ease, opacity 120ms ease;
 }
 
 .cap-pill:hover,
 .cap-pill:focus {
     text-decoration: none;
+    color: #4b5668;
 }
 
 .cap-focus .cap-pill {
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
 .cap-focus .cap-pill.is-on {
     opacity: 1;
     color: #fff;
-    background: var(--cap);
-    border-color: var(--cap);
+    background: var(--accent);
 }
 
 @media (max-width: 1199.98px) {
