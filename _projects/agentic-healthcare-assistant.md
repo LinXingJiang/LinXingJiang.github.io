@@ -6,7 +6,7 @@ summary: A memory-augmented healthcare assistant unifying diagnosis, retrieval, 
 metrics: 7 skills · 3 agents · 26/26 tests passing
 tech: Python, FastAPI, ReAct, Mem0, Milvus
 featured: false
-order: 6
+order: 8
 ---
 
 ## Highlights

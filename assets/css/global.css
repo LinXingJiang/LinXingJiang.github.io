@@ -597,3 +597,8 @@ div.lazy {
         grid-template-columns: 1fr;
     }
 }
+
+/* An odd last featured card spans the full row */
+.featured-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}

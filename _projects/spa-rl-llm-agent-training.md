@@ -6,7 +6,7 @@ summary: Turned sparse end-task rewards into stepwise training signals for multi
 metrics: 3 environments · stepwise rewards · PPO pipeline
 tech: Python, PPO, PRM, WebShop, ALFWorld, VirtualHome
 featured: false
-order: 7
+order: 9
 ---
 
 ## Highlights
