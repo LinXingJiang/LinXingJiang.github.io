@@ -7,7 +7,7 @@ metrics: 7 skills · 3 agents · 26/26 tests passing
 tech: Python, FastAPI, ReAct, Mem0, Milvus
 capabilities: [agents, memory, data]
 featured: false
-order: 8
+order: 7
 ---
 
 ## Highlights
