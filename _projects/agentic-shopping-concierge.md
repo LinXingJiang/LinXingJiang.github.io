@@ -1,5 +1,6 @@
 ---
 title: Agentic Shopping Concierge
+short: Shopping Agent
 period: May 2026 - Jun 2026
 tag: Agentic RL · Multimodal
 summary: A multimodal e-commerce agent built for a ByteDance challenge, where it won an Excellence Award, trained with agentic RL to choose its own tool chains and kept reliable by grounding prices and constraints in the system.

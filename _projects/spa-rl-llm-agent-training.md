@@ -1,5 +1,6 @@
 ---
 title: SPA-RL LLM Agent Training
+short: SPA-RL
 period: 2025 - 2026
 tag: Reinforcement Learning
 summary: Turned sparse end-task rewards into stepwise training signals for multi-step LLM agents.

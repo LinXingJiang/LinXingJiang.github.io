@@ -30,7 +30,7 @@
 
                 <div class="profile-contact mt-4">
                     <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
-                        {{ site.data.profile.email | replace: "@", "(at)" }}
+                        {{ site.data.profile.email | replace: "@", "<wbr>(at)" }}
                     </a>
                 </div>
 

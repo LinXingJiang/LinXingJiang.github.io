@@ -1,5 +1,6 @@
 ---
 title: Insurance-Claims Agent with Self-Evolving Skills
+short: Insurance Agent
 period: Sep 2026
 tag: Agentic RL · Self-Evolution
 summary: A sandboxed insurance-claims service agent trained to act through a controlled skill-and-action protocol, with on-policy distillation that turns hindsight lessons into better intermediate steps.

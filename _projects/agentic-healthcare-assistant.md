@@ -1,5 +1,6 @@
 ---
 title: Agentic Healthcare Assistant
+short: Healthcare Agent
 period: Jan 2026 - Apr 2026
 tag: Multi-Agent System
 summary: A memory-augmented healthcare assistant unifying diagnosis, retrieval, and follow-up in one test-backed system.

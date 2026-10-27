@@ -1,5 +1,6 @@
 ---
 title: Self-Evolving Agent Skills
+short: Skill Evolution
 period: Aug 2026 - Present
 tag: Research · Agent Self-Improvement
 summary: Research extensions to SkillOpt, which trains an agent's skill document instead of its weights, focused on making learned rules actually get followed.

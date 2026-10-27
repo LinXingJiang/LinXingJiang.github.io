@@ -1,5 +1,6 @@
 ---
 title: Airline Customer-Service Agent
+short: Airline Agent
 period: 2024 - 2025
 tag: Production LLM Backend
 summary: Replaced a keyword FAQ workflow with a production LLM service handling real customer traffic.

@@ -1,5 +1,6 @@
 ---
 title: AI Coach for Engineering Design Coursework
+short: AI Coach
 period: Aug 2026 - Present
 tag: AI for Education
 summary: A web platform where students work through engineering-design methods with an AI coach that gives grounded feedback without handing over answers.
