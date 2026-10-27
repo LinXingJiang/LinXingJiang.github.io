@@ -5,6 +5,7 @@ tag: Agentic RL · Multimodal
 summary: A vision-language customer-service agent for e-commerce, moved from imitating tool chains with SFT to choosing its own tool chains with agentic RL.
 metrics: Accuracy 64.6 → 71.8 on a 1,000-question eval · human handoff 21.1% → 15.6% · 99% tool-call success
 tech: Python, LLaMA-Factory, rLLM, Megatron-LM, GRPO, Vision-Language Models, LLM-as-Judge
+capabilities: [agents, rl, data, eval]
 featured: false
 order: 7
 ---

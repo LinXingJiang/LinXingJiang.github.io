@@ -8,6 +8,7 @@ summary: One sentence on what it is and why it matters.
 metrics: Key result 1 · Key result 2      # optional
 tech: Python, FastAPI, PyTorch            # comma-separated
 github: https://github.com/LinXingJiang/xxx   # optional; also supports demo: and paper:
+capabilities: [agents, rl]       # keys from _data/capabilities.yml
 featured: false                  # true = also shown on the homepage
 order: 10                        # smaller = shown earlier
 ---

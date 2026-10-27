@@ -1,0 +1,32 @@
+# Capabilities shown in the homepage capability map.
+# A project lists the keys it covers in its front matter: `capabilities: [agents, rl]`.
+- key: agents
+  name: LLM Agents
+  short: Agents
+  icon: fas fa-robot
+  meaning: Turning a model into a system that plans, calls tools, and acts over many steps.
+- key: rl
+  name: Reinforcement Learning
+  short: RL
+  icon: fas fa-chart-line
+  meaning: Post-training that teaches models from outcomes, not just from imitation.
+- key: memory
+  name: Memory & Self-Improvement
+  short: Self-Evolve
+  icon: fas fa-seedling
+  meaning: Agents that keep and refine what they learn from experience, often without touching weights.
+- key: infra
+  name: Agent Infrastructure
+  short: Infra
+  icon: fas fa-server
+  meaning: Serving, harnesses, guardrails, and latency work that let agents run reliably for real users.
+- key: data
+  name: Data & Retrieval
+  short: Data
+  icon: fas fa-database
+  meaning: Building training data and grounding models in real knowledge through retrieval.
+- key: eval
+  name: Evaluation
+  short: Eval
+  icon: fas fa-ruler-combined
+  meaning: Measuring what models can really do, and checking that the measurement itself holds up.

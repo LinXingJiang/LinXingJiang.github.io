@@ -12,6 +12,8 @@ navbar_title: Home
 
         {% include widgets/profile_card_bio_only.html %}
 
+        {% include widgets/capability_map.html %}
+
         {% include widgets/featured_projects.html limit=site.data.display.homepage.num_projects %}
 
         {% if site.data.display.homepage.show_news %}

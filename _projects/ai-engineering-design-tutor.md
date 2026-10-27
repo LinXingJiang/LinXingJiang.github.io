@@ -5,6 +5,7 @@ tag: AI for Education
 summary: A web platform where students work through engineering-design methods with an AI coach that gives grounded feedback without handing over answers.
 metrics: Used by several hundred students in a Fall 2026 UB course · 17 of 18 modules running end to end
 tech: Python, React, Vite, vLLM, Hybrid RAG, Multi-Agent
+capabilities: [agents, data, infra, eval]
 featured: true
 order: 1
 ---

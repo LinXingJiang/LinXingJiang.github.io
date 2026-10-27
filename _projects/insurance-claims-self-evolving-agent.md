@@ -5,6 +5,7 @@ tag: Agentic RL · Self-Evolution
 summary: A sandboxed insurance-claims service agent trained to act through a controlled skill-and-action protocol, with on-policy distillation that turns hindsight lessons into better intermediate steps.
 metrics: Accuracy 82.8% → 91.9% · required-action completion 78.6% → 90.7% · hallucination 9.4% → 2.3%
 tech: Python, verl, SEED, GRPO, On-Policy Distillation, LLM Agents
+capabilities: [agents, rl, memory, infra, data]
 featured: true
 order: 3
 ---

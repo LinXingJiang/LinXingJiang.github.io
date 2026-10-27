@@ -5,6 +5,7 @@ tag: Multi-Agent System
 summary: A memory-augmented healthcare assistant unifying diagnosis, retrieval, and follow-up in one test-backed system.
 metrics: 7 skills · 3 agents · 26/26 tests passing
 tech: Python, FastAPI, ReAct, Mem0, Milvus
+capabilities: [agents, memory, data]
 featured: false
 order: 8
 ---

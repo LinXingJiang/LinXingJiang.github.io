@@ -1,0 +1,72 @@
+{%- comment -%}
+Capability map: what each capability means in the LLM era, and which projects use it.
+Capabilities come from _data/capabilities.yml; projects declare `capabilities:` in front matter.
+{%- endcomment -%}
+{%- assign caps = site.data.capabilities -%}
+{%- assign projects = site.projects | sort: "order" -%}
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm projects-shell" id="capability-map">
+            <div class="card-body p-4">
+                <div class="section-kicker"><i class="fas fa-compass mr-1"></i>What I Work On</div>
+                <p class="cap-intro mb-3">The capabilities that turn a language model into a useful system, and where each of my projects sits. Hover a capability to see its projects.</p>
+
+                <div class="cap-grid">
+                    {% for cap in caps %}
+                    {%- assign n = 0 -%}
+                    {%- for p in projects -%}{%- if p.capabilities contains cap.key -%}{%- assign n = n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+                    <div class="cap-card" data-cap="{{ cap.key }}" tabindex="0">
+                        <div class="cap-head">
+                            <i class="{{ cap.icon }} cap-icon"></i>
+                            <span class="cap-name">{{ cap.name }}</span>
+                            <span class="cap-count">{{ n }}</span>
+                        </div>
+                        <div class="cap-meaning">{{ cap.meaning }}</div>
+                        <div class="cap-bar"><span style="width: {{ n | times: 100 | divided_by: projects.size }}%"></span></div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="cap-matrix-wrap mt-4">
+                    <table class="cap-matrix">
+                        <thead>
+                            <tr>
+                                <th class="cap-matrix-project">Project</th>
+                                {% for cap in caps %}<th data-cap="{{ cap.key }}" title="{{ cap.name }}">{{ cap.short }}</th>{% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for p in projects %}
+                            <tr>
+                                <td class="cap-matrix-project"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></td>
+                                {% for cap in caps %}
+                                <td data-cap="{{ cap.key }}">{% if p.capabilities contains cap.key %}<span class="cap-dot" title="{{ cap.name }}"></span>{% endif %}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var map = document.getElementById("capability-map");
+    if (!map) return;
+    function setActive(key) {
+        map.querySelectorAll("[data-cap]").forEach(function (el) {
+            el.classList.toggle("cap-active", key !== null && el.getAttribute("data-cap") === key);
+        });
+        map.classList.toggle("cap-filtering", key !== null);
+    }
+    map.querySelectorAll(".cap-card, .cap-matrix th[data-cap]").forEach(function (el) {
+        var key = el.getAttribute("data-cap");
+        el.addEventListener("mouseenter", function () { setActive(key); });
+        el.addEventListener("focus", function () { setActive(key); });
+        el.addEventListener("mouseleave", function () { setActive(null); });
+        el.addEventListener("blur", function () { setActive(null); });
+    });
+});
+</script>

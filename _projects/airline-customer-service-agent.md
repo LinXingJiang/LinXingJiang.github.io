@@ -5,6 +5,7 @@ tag: Production LLM Backend
 summary: Replaced a keyword FAQ workflow with a production LLM service handling real customer traffic.
 metrics: 2k-6k daily inquiries · 0.93 F1 · 5.2s → 2.0s latency
 tech: Python, LangGraph, FastAPI, Neo4j, Redis
+capabilities: [agents, infra, data]
 featured: true
 order: 6
 ---

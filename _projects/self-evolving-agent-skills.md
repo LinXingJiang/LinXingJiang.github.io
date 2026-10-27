@@ -5,6 +5,7 @@ tag: Research · Agent Self-Improvement
 summary: Research extensions to SkillOpt, which trains an agent's skill document instead of its weights, focused on making learned rules actually get followed.
 metrics: Rule gate + failure-pattern lineage · experiments on ALFWorld, LiveMath, SealQA, DocVQA
 tech: Python, Qwen3, LLM-as-Judge, ALFWorld, SkillOpt
+capabilities: [agents, memory, eval]
 featured: true
 order: 2
 ---

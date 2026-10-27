@@ -6,6 +6,7 @@ summary: A multi-agent shopping assistant that grew out of my award-winning Byte
 metrics: Excellence Award, ByteDance challenge · price leakage 100% → 10% · brand consistency 30% → 60%
 tech: Python, FastAPI, Swift, Qdrant, bge-m3, Mem0, Qwen2.5-VL, Thompson Sampling, SSE
 github: https://github.com/LinXingJiang/Shopping_Agent
+capabilities: [agents, memory, infra, data]
 featured: true
 order: 5
 ---
