@@ -4,6 +4,7 @@ navbar_name: "Xingjiang"
 
 positions:
 - name: M.S. in Computer Science, University at Buffalo
+- name: Contributor to Marin, open-source foundation models
 - name: Previously Software Engineer at LSEG and Luming
 
 location: "Buffalo, New York"
@@ -12,6 +13,7 @@ focus_areas:
 - Agent Self-Improvement
 - Reinforcement Learning
 - Evaluation Methodology
+- Training & Inference Infra
 
 
 email: "xingjiang.lin@outlook.com"
@@ -38,6 +40,13 @@ short_bio: >-
     Before graduate school I spent two years in industry, building market-data services at LSEG and production LLM
     systems at Luming. Watching models meet real users is what made me care about this question: a claim about a
     model's capability should hold up under careful measurement, not just in a convincing example.
+  </p>
+  <p>
+    Lately I have been moving down the stack, toward the systems that make training and serving work. I contribute
+    to <a href="https://github.com/marin-community/marin" target="_blank">Marin</a>, an open lab building
+    foundation models in the open; I run my own RL experiments in verl, deliberately injecting the silent bugs that
+    break real training runs to learn how each one shows up in the curves; and I study inference engines such as
+    vLLM, SGLang, and DeepInfer, especially speculative decoding and keeping training and inference consistent.
   </p>
 
 portrait_url: /assets/images/photos/xingjiang-lin.jpg

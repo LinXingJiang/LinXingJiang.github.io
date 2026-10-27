@@ -8,7 +8,7 @@ metrics: 3 environments · stepwise rewards · PPO pipeline
 tech: Python, PPO, PRM, WebShop, ALFWorld, VirtualHome
 capabilities: [agents, rl]
 featured: false
-order: 8
+order: 9
 ---
 
 ## Highlights

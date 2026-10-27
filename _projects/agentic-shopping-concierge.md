@@ -9,7 +9,7 @@ tech: Python, FastAPI, Swift, Qdrant, bge-m3, Mem0, Qwen2.5-VL, GRPO, rLLM, Mega
 github: https://github.com/LinXingJiang/Shopping_Agent
 capabilities: [agents, rl, memory, infra, data, eval]
 featured: true
-order: 5
+order: 6
 ---
 
 ## Overview
