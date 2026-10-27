@@ -7,7 +7,7 @@ metrics: Excellence Award, ByteDance challenge · price leakage 100% → 10% · 
 tech: Python, FastAPI, Swift, Qdrant, bge-m3, Mem0, Qwen2.5-VL, Thompson Sampling, SSE
 github: https://github.com/LinXingJiang/Shopping_Agent
 featured: true
-order: 3
+order: 4
 ---
 
 ## Origin: ByteDance Challenge

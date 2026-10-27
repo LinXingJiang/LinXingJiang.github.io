@@ -6,7 +6,7 @@ summary: Replaced a keyword FAQ workflow with a production LLM service handling 
 metrics: 2k-6k daily inquiries · 0.93 F1 · 5.2s → 2.0s latency
 tech: Python, LangGraph, FastAPI, Neo4j, Redis
 featured: true
-order: 4
+order: 5
 ---
 
 ## Highlights
