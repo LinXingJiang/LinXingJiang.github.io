@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Xingjiang Lin
 description: >-
-  Xingjiang Lin - software engineer and M.S. CS student at the University at Buffalo, building reliable backend and LLM agent systems.
+  Xingjiang Lin - M.S. CS student at the University at Buffalo studying how LLMs and agents learn, improve, and should be evaluated.
 email: xingjiang.lin@outlook.com
 baseurl: "" # the subpath of your site, e.g. /blog
 timezone: America/New_York
@@ -57,6 +57,7 @@ exclude:
   - LICENSE
   - SETUP_GUIDE.md
   - Xingjiang.pdf
+  - blog/
   - Gemfile
   - Gemfile.lock
   - vendor/

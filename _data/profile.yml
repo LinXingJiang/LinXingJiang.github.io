@@ -3,15 +3,15 @@ secondary_name: ""
 navbar_name: "Xingjiang"
 
 positions:
-- name: Software Engineer
 - name: M.S. in Computer Science, University at Buffalo
+- name: Previously Software Engineer at LSEG and Luming
 
 location: "Buffalo, New York"
 focus_areas:
-- LLM Systems
-- Backend Infrastructure
-- Retrieval and Agents
-- Production APIs
+- LLM Reasoning and Learning
+- Agent Self-Improvement
+- Reinforcement Learning
+- Evaluation Methodology
 
 
 email: "xingjiang.lin@outlook.com"
@@ -29,13 +29,15 @@ linkedin: lin-xingjiang-4773b7326
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an M.S. Computer Science student at the University at Buffalo with two years of industry experience.
-    I worked on market-data backend services at LSEG, then built production LLM services at Luming, including an
-    airline customer-service agent handling 2k-6k inquiries a day.
+    I am an M.S. Computer Science student at the University at Buffalo. My research asks what large language models
+    actually learn and how they improve: how an agent's behavior can be trained through its skills without touching
+    model weights, how reinforcement learning assigns credit across long multi-step trajectories, and how evaluation
+    choices can quietly change the conclusions we draw about what a model can do.
   </p>
   <p>
-    Now I focus on making LLM agents reliable: retrieval, memory, multi-agent coordination, and training agents
-    with reinforcement learning.
+    Before graduate school I spent two years in industry, building market-data services at LSEG and production LLM
+    systems at Luming. Watching models meet real users is what made me care about this question: a claim about a
+    model's capability should hold up under careful measurement, not just in a convincing example.
   </p>
 
 portrait_url: /assets/images/photos/xingjiang-lin.jpg
