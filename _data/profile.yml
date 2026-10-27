@@ -16,52 +16,22 @@ focus_areas:
 - Training & Inference Infra
 
 
-vision_title: "I want to understand how intelligence is learned, and build AI that keeps getting better on its own."
-vision_summary: >-
-  Today's models are trained once and then frozen. The systems I want to build learn from every task they attempt,
-  every mistake they make, and every person they teach, and I want to understand that learning well enough to
-  trust it. That takes three things at once: a theory of what learning changes inside a model, methods that let
-  systems improve themselves, and the infrastructure to train and run them correctly.
+vision_title: "Building AI that improves itself."
+vision_summary: "Understand how models learn. Make them keep learning after training ends. Build the stack that runs it."
 vision_thrusts:
 - label: Understand
-  title: What does a model actually learn?
-  description: >-
-    Pretraining draws the map, prompts and RL search it. I study when RL creates new capability rather than
-    reweighting old paths, and whether our evaluations can tell the difference.
-  links:
-  - name: Pretraining, Prompts and RL as Search
-    url: /2026/10/27/pretraining-prompts-rl-as-search
-  - name: Evaluating Vulnerability Detection (SoK)
-    url: /projects/sok-vulnerability-detection-evaluation
+  line: What learning really changes inside a model.
+  link_name: Pretraining, prompts and RL as search
+  url: /2026/10/27/pretraining-prompts-rl-as-search
 - label: Improve
-  title: Systems that improve themselves
-  description: >-
-    Agents that turn experience into skills, rules, and memory, and tutors that learn which of their own teaching
-    moves work, so that improvement continues after training ends.
-  links:
-  - name: Self-Evolving Agent Skills
-    url: /projects/self-evolving-agent-skills
-  - name: Learning to Teach
-    url: /projects/ai-engineering-design-tutor#next-learning-to-teach-research-proposal
-  - name: Insurance-Claims Agent
-    url: /projects/insurance-claims-self-evolving-agent
+  line: Agents and tutors that get better from their own experience.
+  link_name: Self-evolving agent skills
+  url: /projects/self-evolving-agent-skills
 - label: Build
-  title: The full stack, from systems to agents
-  description: >-
-    Ideas only count if they run. I work across RL training pipelines, inference engines, and production agents,
-    and contribute to open foundation-model efforts.
-  links:
-  - name: RL Systems Lab
-    url: /projects/rl-systems-lab
-  - name: Marin contribution
-    url: https://github.com/marin-community/marin/pull/10084
-  - name: AI Coach (hundreds of students)
-    url: /projects/ai-engineering-design-tutor
-vision_questions:
-- Can an agent improve from experience as reliably without weight updates as RL does with them?
-- When does RL teach a model something new, and how would we measure it?
-- Can a tutor learn which teaching moves work, the way a student learns which solutions work?
-- What would it take to trust the gains of a system that improves itself?
+  line: The full stack, from RL pipelines and inference to agents.
+  link_name: RL systems lab
+  url: /projects/rl-systems-lab
+vision_question: "Can a model teach itself something new?"
 
 email: "xingjiang.lin@outlook.com"
 # cv_link: /Xingjiang.pdf  # resume not published for now
@@ -78,22 +48,10 @@ linkedin: lin-xingjiang-4773b7326
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an M.S. Computer Science student at the University at Buffalo. My research asks what large language models
-    actually learn and how they improve: how an agent's behavior can be trained through its skills without touching
-    model weights, how reinforcement learning assigns credit across long multi-step trajectories, and how evaluation
-    choices can quietly change the conclusions we draw about what a model can do.
-  </p>
-  <p>
-    Before graduate school I spent two years in industry, building market-data services at LSEG and production LLM
-    systems at Luming. Watching models meet real users is what made me care about this question: a claim about a
-    model's capability should hold up under careful measurement, not just in a convincing example.
-  </p>
-  <p>
-    Lately I have been moving down the stack, toward the systems that make training and serving work. I contribute
-    to <a href="https://github.com/marin-community/marin" target="_blank">Marin</a>, an open lab building
-    foundation models in the open; I run my own RL experiments in verl, deliberately injecting the silent bugs that
-    break real training runs to learn how each one shows up in the curves; and I study inference engines such as
-    vLLM, SGLang, and DeepInfer, especially speculative decoding and keeping training and inference consistent.
+    I am an M.S. Computer Science student at the University at Buffalo, working on reinforcement learning, agent
+    self-improvement, and evaluation. Before that I spent two years shipping production systems at LSEG and LLM
+    services at Luming, and I now contribute to <a href="https://github.com/marin-community/marin" target="_blank">Marin</a>,
+    an open lab for foundation models.
   </p>
 
 portrait_url: /assets/images/photos/xingjiang-lin.jpg
