@@ -16,6 +16,53 @@ focus_areas:
 - Training & Inference Infra
 
 
+vision_title: "I want to understand how intelligence is learned, and build AI that keeps getting better on its own."
+vision_summary: >-
+  Today's models are trained once and then frozen. The systems I want to build learn from every task they attempt,
+  every mistake they make, and every person they teach, and I want to understand that learning well enough to
+  trust it. That takes three things at once: a theory of what learning changes inside a model, methods that let
+  systems improve themselves, and the infrastructure to train and run them correctly.
+vision_thrusts:
+- label: Understand
+  title: What does a model actually learn?
+  description: >-
+    Pretraining draws the map, prompts and RL search it. I study when RL creates new capability rather than
+    reweighting old paths, and whether our evaluations can tell the difference.
+  links:
+  - name: Pretraining, Prompts and RL as Search
+    url: /2026/10/27/pretraining-prompts-rl-as-search
+  - name: Evaluating Vulnerability Detection (SoK)
+    url: /projects/sok-vulnerability-detection-evaluation
+- label: Improve
+  title: Systems that improve themselves
+  description: >-
+    Agents that turn experience into skills, rules, and memory, and tutors that learn which of their own teaching
+    moves work, so that improvement continues after training ends.
+  links:
+  - name: Self-Evolving Agent Skills
+    url: /projects/self-evolving-agent-skills
+  - name: Learning to Teach
+    url: /projects/ai-engineering-design-tutor#next-learning-to-teach-research-proposal
+  - name: Insurance-Claims Agent
+    url: /projects/insurance-claims-self-evolving-agent
+- label: Build
+  title: The full stack, from systems to agents
+  description: >-
+    Ideas only count if they run. I work across RL training pipelines, inference engines, and production agents,
+    and contribute to open foundation-model efforts.
+  links:
+  - name: RL Systems Lab
+    url: /projects/rl-systems-lab
+  - name: Marin contribution
+    url: https://github.com/marin-community/marin/pull/10084
+  - name: AI Coach (hundreds of students)
+    url: /projects/ai-engineering-design-tutor
+vision_questions:
+- Can an agent improve from experience as reliably without weight updates as RL does with them?
+- When does RL teach a model something new, and how would we measure it?
+- Can a tutor learn which teaching moves work, the way a student learns which solutions work?
+- What would it take to trust the gains of a system that improves itself?
+
 email: "xingjiang.lin@outlook.com"
 # cv_link: /Xingjiang.pdf  # resume not published for now
 # gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
